@@ -1,0 +1,1 @@
+# giroskuter_verstka
