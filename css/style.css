@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -21,9 +20,8 @@ ul {
     list-style: none;
 }
 
-
 .container {
-    max-width: 1150px; 
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -37,11 +35,6 @@ ul {
     font-weight: 600;
     cursor: pointer;
     border-radius: 2px;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #e67e22;
 }
 
 .btn-secondary {
@@ -59,6 +52,22 @@ ul {
 .btn-secondary:hover {
     background: #fff;
     color: #333;
+}
+
+.btn-small {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.btn-small:hover {
+    background-color: #e67e22;
 }
 
 .top-bar {
@@ -99,12 +108,9 @@ ul {
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    transition: color 0.3s;
 }
 
-.nav-menu a:hover {
-    color: #f39c12;
-}
+
 .hero {
     background: url('/img/scooter.png') center/cover no-repeat;
     height: 500px;
@@ -125,10 +131,6 @@ ul {
     justify-content: center;
 }
 
-.hero-content {
-    width: 100%;
-}
-
 .hero h1 {
     font-size: 48px;
     font-weight: 400;
@@ -138,4 +140,513 @@ ul {
 .hero p {
     font-size: 16px;
     margin-bottom: 30px;
+}
+
+.features {
+    padding: 60px 0;
+} 
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2, .about h2, .specifics h2, .catalog h2, .consultants h2, .info h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+
+.arrows span {
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.feature-item {
+    width: 22%;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.about {
+    padding: 40px 0;
+}
+
+.about p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+    max-width: 900px;
+}
+
+.subscribe {
+    background-color: #f39c12;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.subscribe-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe-text h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    width: 200px;
+}
+
+.subscribe-form .btn-secondary {
+    color: #333;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.subscribe-form .btn-secondary:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.specifics {
+    padding: 60px 0;
+}
+
+.specifics-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.spec-list {
+    width: 30%;
+    font-size: 14px;
+    color: #555;
+}
+
+.spec-list li {
+    margin-bottom: 10px;
+}
+
+.spec-footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}
+
+.catalog {
+    padding: 60px 0;
+}
+
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    background: #f0f0f0;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.filter-btn.active {
+    background: #f39c12;
+    color: #fff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 3px 10px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.badge.orange {
+    background: #f39c12;
+}
+
+.product-img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-card h4 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Консультанты */
+.consultants {
+    padding: 60px 0;
+}
+
+.consultants-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.consultant-card {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.consultant-img {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.consultant-info h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.consultant-info p {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Бренды */
+.brands {
+    padding: 40px 0;
+    background: #fafafa;
+}
+
+.brands-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ccc;
+}
+
+/* Полезная информация */
+.info {
+    padding: 60px 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.info-card {
+    position: relative;
+    cursor: pointer;
+}
+.info-card p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: #00000080;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 0;
+    
+    display: flex;
+    align-items: center;      
+    justify-content: center; 
+    text-align: center;       
+}
+
+.info-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+/* Подвал */
+.footer {
+    background: #f9f9f9;
+    padding: 50px 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-about {
+    width: 35%;
+}
+
+.footer-about p {
+    margin-bottom: 15px;
+}
+
+.copyright {
+    margin-top: 30px;
+    color: #ccc;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+    width: 60%;
+}
+
+.footer-col h4 {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a:hover {
+    color: #f39c12;
+}
+
+/*Адаптивность */
+@media (max-width: 992px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .consultants-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brands-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .subscribe-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-about {
+        width: 100%;
+    }
+
+    .footer-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .arrows {
+        display: none; 
+    }
+
+    .features-grid {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .feature-item {
+        width: 45%;
+    }
+
+    .specifics-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .spec-list {
+        width: 100%;
+    }
+
+    .catalog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .consultants-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .consultant-card {
+        align-items: center;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .subscribe-form input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .subscribe-form .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .feature-item {
+        width: 100%;
+    }
+
+    .btn-primary, 
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
 }
